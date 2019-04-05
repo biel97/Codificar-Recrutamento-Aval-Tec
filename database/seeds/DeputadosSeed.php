@@ -9,7 +9,7 @@ class DeputadosSeed extends Seeder {
      * @return void
      */
     public function run() {
-        $json_file = file_get_contents("http://dadosabertos.almg.gov.br/ws/deputados/em_exercicio?formato=json");
+      $json_file = file_get_contents("http://dadosabertos.almg.gov.br/ws/deputados/em_exercicio?formato=json");
   		$dados = json_decode($json_file);
 
   		for ($i=0; $i < sizeof($dados->list); $i++) {
