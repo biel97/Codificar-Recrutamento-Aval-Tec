@@ -14,19 +14,33 @@
 - Instalar Postman "https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en".
 
 - Criar o bando de dados no "http://localhost/phpmyadmin".
-    "CREATE DATABASE laravel".
-    No arquivo "projeto-cidadao\.env.example" tem a configuração do banco de dados.
+
+"CREATE DATABASE laravel".
+
+ No arquivo "projeto-cidadao\.env.example" tem a configuração do banco de dados.
+ 
 - Adicionar as tabelas no banco de dados.
+
     Colocar o projeto na pasta htdocs do xampp.
+    
     Acessar o projeto pelo terminal. 
+    
     Rodar o comando "php artisan migrate".
+    
 - Popular o bd.
+
     Rodar o comando "php artisan db:seed".
+    
     *obs: A API publica retorna erro em algumas consultas, dessa forma as tabelas devem ser limpas e o seed rodado novamente. 
+    
 - Rodar a aplicação.
+
     Rodar o comando "php artisan serve".
+    
 - Acessar urls do projeto pelo Postman.
+
     "127.0.0.1:8000/api/api/verbas-indenizatorias".
+    
     "127.0.0.1:8000/api/api/midias".
 ________________________________________________________________________________________________________________________________________
 ## About Laravel
