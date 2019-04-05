@@ -13,20 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
- //   return $request->user();
-//});
 Route::group(array('prefix' => 'api'), function()
 {
 
-  Route::get('/', function () {
-      return response()->json(['message' => 'Jobs API', 'status' => 'Connected']);;
-  });
-
   Route::resource('verbas-indenizatorias', 'VerbasIndenizatoriasController');
-  //Route::resource('companies', 'CompaniesController');
+  Route::resource('midias', 'MidiasController');
+
 });
 
-Route::get('/', function () {
-    return redirect('api');
-});

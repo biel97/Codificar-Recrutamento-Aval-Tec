@@ -12,8 +12,8 @@ class DatabaseSeeder extends Seeder {
     public function run() {
         Model::unguard();
 
-        //$this->call(DeputadosSeed::class);
-        //$this->call(Verbas_IndenizatoriasSeed::class);
+        $this->call(DeputadosSeed::class);
+        $this->call(Verbas_IndenizatoriasSeed::class);
         $this->call(MidiasSeed::class);
 
         Model::reguard();

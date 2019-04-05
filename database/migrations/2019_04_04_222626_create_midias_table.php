@@ -12,7 +12,7 @@ class CreateMidiasTable extends Migration {
      */
     public function up() {
         Schema::create('midias', function (Blueprint $table) {
-            $table->integer('id');
+            $table->integer('id')->unique();
             $table->string('nome');
             $table->string('mimeType');
             $table->string('extensao');
